@@ -6,7 +6,8 @@ const websites = [
     name: "Strength",
     url: "https://strength.wholesoft.net",
     description: "A simple app to track weight lifting workouts.",
-    image: "images/strength.png",
+    images: ["images/strength.png"],
+    altTags: ["Wholesoft Strength"],
     developedWith: "next.js, typescript, mysql, nextauth, sendgrid email, pm2.",
   },
   {
@@ -14,7 +15,8 @@ const websites = [
     name: "Stuff",
     url: "https://stuff.wholesoft.net",
     description: "A simple inventory app to group and track items.",
-    image: "images/stuff2.png",
+    images: ["images/stuff1.png", "images/stuff2.png"],
+    altTags: ["Wholesoft Stuff"],
     developedWith:
       "node.js, react, react-query, mysql, jwt authentication, sendgrid email, pm2, AWS EC2.",
   },
@@ -23,7 +25,8 @@ const websites = [
     name: "Notes",
     url: "https://notes.wholesoft.net",
     description: "An app for a daily journal with various quirky features.",
-    image: "images/notes.png",
+    images: ["images/notes.png"],
+    altTags: ["Wholesoft Notes"],
     developedWith:
       "node.js, react, react-query, mysql, jwt authentication, sendgrid email,  pm2, AWS EC2.",
   },
@@ -32,7 +35,12 @@ const websites = [
     name: "API-Tester",
     url: "https://api-tester.wholesoft.net",
     description: "Testing various quirky API's found on the internet.",
-    image: "images/api-test1.png",
+    images: [
+      "images/api-test1.png",
+      "images/api-test2.png",
+      "images/api-test3.png",
+    ],
+    altTags: ["Wholesoft API-Tester"],
     developedWith: "node.js, react, typescript, pm2, AWS.",
   },
 ]
@@ -63,7 +71,8 @@ function App() {
                 name={ws.name}
                 url={ws.url}
                 description={ws.description}
-                image={ws.image}
+                images={ws.images}
+                altTags={ws.altTags}
                 developedWith={ws.developedWith}
               />
             </div>

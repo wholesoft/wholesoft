@@ -1,8 +1,11 @@
+import ImageCarousel from "./ImageCarousel"
+
 type WebsiteProps = {
   name: string
   url: string
   description: string
-  image: string
+  images: string[]
+  altTags: string[]
   developedWith: string
 }
 
@@ -18,7 +21,7 @@ export default function WebsiteCard(props: WebsiteProps) {
       </div>
       <div className="ws-image-container">
         <a href={props.url}>
-          <img className="screenshot" src={props.image} alt={props.name} />
+          <ImageCarousel images={props.images} altTags={props.altTags} />
         </a>
       </div>
       <div className="ws-card-devtools">
