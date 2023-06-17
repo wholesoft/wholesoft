@@ -1,0 +1,77 @@
+body {
+  font-family: var(--font-family);
+  background-color: var(--blue-900);
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  margin: 3px 0 0 3px;
+  height: 44px;
+  width: 44px;
+}
+
+a {
+  color: var(--blue-800);
+}
+
+a:hover {
+  color: var(--blue-600);
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--blue-200);
+  /* height: 58px; */
+}
+
+.title {
+  color: var(--blue-800);
+  display: inline-block;
+}
+
+.ws-container {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .ws-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .ws-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  .ws-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.ws-card {
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: #eff6ff;
+}
+
+.ws-card-description {
+  padding: 1px 20px 0 20px;
+  height: 125px;
+}
+
+.ws-card-devtools {
+  padding: 1px 20px 1px 20px;
+  height: 100px;
+  display: none;
+}
